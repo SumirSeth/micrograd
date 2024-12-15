@@ -21,6 +21,6 @@ class Value:
         return output
     def __mul__(self, other):
         self.other = other
-        output = Value(self.data * other.data)
+        output = Value(self.data * other.data, (self, other), '*')
         return output
 
